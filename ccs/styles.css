@@ -35,6 +35,9 @@ button {
 .container {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
     width: 1200px;
     outline: 2px solid var(--color-text);
 }
@@ -46,6 +49,7 @@ button {
     color: var(--color-text);
 }
 .title {
+    margin: 0;
     color: var(--color-title);
     font-weight: 700;
     font-size: 36px;
@@ -57,6 +61,10 @@ button {
     font-size: 14px;
     line-height: 1.71;
 }*/
+ .card-features, p {
+    margin: 0;
+    width: 270px;
+}
 .card-team {
     background-color: var(--color-white);
     width: 270px;
@@ -77,10 +85,14 @@ button {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    
     letter-spacing: 0.06em;
+
     text-transform: uppercase;
     margin-bottom: 30px;
+}
+.page-team .title, .page-employ .title {
+    text-align: center;
+    margin-bottom: 50px;
 }
 .card-features .title{
     font-size: 14px;
@@ -90,6 +102,8 @@ button {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
 }
 .card-projeckt .title {
     font-size: 18px;
@@ -101,9 +115,10 @@ button {
     display: none
 }*/
 .page-poster {
+    width: 1600px;
+    height: 600px;
     text-align: center;
     background-color: var(--color-footer); 
-    width: 1600px;
 }
 .primary {
     background-color: var(--color-accent);
@@ -157,6 +172,7 @@ button {
     text-align: center;
 }
 .button-main {
+    margin-bottom: 200px;
     padding: 10px 32px;
     font-weight: 700;
     line-height: 1.88;
@@ -178,12 +194,10 @@ button {
     color: var(--color-white);
 }
 .page-team {
-     background-color: var(--color-grey);
-     width: 1600px;  
+     background-color: var(--color-grey); 
 }
 .page-footer {
     background-color: var(--color-footer);
-    width: 1600px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
