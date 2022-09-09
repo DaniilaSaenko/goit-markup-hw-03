@@ -39,14 +39,7 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
     width: 1200px;
-    outline: 2px solid var(--color-text);
-}
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88px;
-    letter-spacing: 0.03em;
-    color: var(--color-text);
+/*    outline: 2px solid var(--color-text);*/
 }
 .title {
     margin: 0;
@@ -56,11 +49,66 @@ button {
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88px;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+}
+.line {
+    margin: 0;
+    border: 1px solid #ECECEC;
+}
+.primary {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+.secondary {
+    background-color: var(--color-grey);
+    color: var(--color-title);
+}
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.page-poster .title {
+    color: var(--color-white);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
 
-/*.card-features {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.page-team .title,
+.page-employ .title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.card-features .title {
     font-size: 14px;
-    line-height: 1.71;
-}*/
+    line-height: 1.14;
+}
+
+.card-team .title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card-projeckt .title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    padding-bottom: 20px;
+}
  .card-features, p {
     margin: 0;
     width: 270px;
@@ -75,42 +123,22 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 .card-projeckt {
+    display: inline-block;
     text-decoration: none;
     width: 370px;
     font-size: 16px;
     line-height: 1.88;
     }
-.page-poster .title {
-    color: var(--color-white);   
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    letter-spacing: 0.06em;
 
-    text-transform: uppercase;
-    margin-bottom: 30px;
+.card-projeckt .text {
+    padding-bottom: 20px;
 }
-.page-team .title, .page-employ .title {
-    text-align: center;
-    margin-bottom: 50px;
+.title-text {
+    margin: 0;
+    background: var(--color-white);
+    border: 1px solid var(--color-borders);
+    padding-bottom: 20px;
 }
-.card-features .title{
-    font-size: 14px;
-    line-height: 1.14;
-}
-.card-team .title{
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.card-projeckt .title {
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
 /*.page-features .title, .page-projeckt .title {
     display: none
 }*/
@@ -120,20 +148,7 @@ button {
     text-align: center;
     background-color: var(--color-footer); 
 }
-.primary {
-    background-color: var(--color-accent);
-    color: var(--color-white);
-}
-.secondary {
-    background-color: var(--color-grey);
-    color: var(--color-title);
-}
 
-.list {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
 .logo-main {
     text-decoration: none;
     color: var(--color-black);
@@ -205,6 +220,7 @@ button {
     
 }
 .logo-footer {
+    display: inline-block;
     text-decoration: none;
     color: var(--color-white);
     font-family: 'Raleway', sans-serif;
@@ -212,6 +228,7 @@ button {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
 }
 
 .logo-color {
@@ -222,7 +239,9 @@ button {
     font-style: normal;
 }
 .address-footer, .link-footer{
+    display: inline-block;
     text-decoration: none;
+    padding-bottom: 9px;
     }
 .link-footer:hover, .link-footer:focus 
 {
