@@ -9,15 +9,11 @@
     --color-rgba:rgba(255, 255, 255, 0.6);
     --color-borders: #EEEEEE;
 }
+/*
 html {
     box-sizing: border-box;
 }
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
+*/
 body {
     background-color: var(--color-white);
     color: var(--color-text);
@@ -39,7 +35,6 @@ button {
     padding-top: 94px;
     padding-bottom: 94px;
     width: 1200px;
-/*    outline: 2px solid var(--color-text);*/
 }
 .title {
     margin: 0;
@@ -50,16 +45,15 @@ button {
     letter-spacing: 0.03em;
 }
 .text {
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88px;
     letter-spacing: 0.03em;
     color: var(--color-text);
+
 }
-.line {
-    margin: 0;
-    border: 1px solid #ECECEC;
-}
+
 .primary {
     background-color: var(--color-accent);
     color: var(--color-white);
@@ -72,6 +66,10 @@ button {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+.page-header {
+    margin: 0;
+    border-bottom: 1px solid #ECECEC;
 }
 .page-poster .title {
     color: var(--color-white);
@@ -95,6 +93,7 @@ button {
     line-height: 1.14;
 }
 
+
 .card-team .title {
     font-weight: 500;
     font-size: 16px;
@@ -107,12 +106,9 @@ button {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-bottom: 20px;
+    margin-bottom: 4px;
 }
- .card-features, p {
-    margin: 0;
-    width: 270px;
-}
+
 .card-team {
     background-color: var(--color-white);
     width: 270px;
@@ -125,23 +121,24 @@ button {
 .card-projeckt {
     display: inline-block;
     text-decoration: none;
-    width: 370px;
     font-size: 16px;
     line-height: 1.88;
-    }
-
-.card-projeckt .text {
-    padding-bottom: 20px;
+}
+.card-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .title-text {
-    margin: 0;
+    display: block;
     background: var(--color-white);
     border: 1px solid var(--color-borders);
-    padding-bottom: 20px;
+    border-top: none;
+    padding: 20px 24px;
 }
-/*.page-features .title, .page-projeckt .title {
+.title-none {
     display: none
-}*/
+}
 .page-poster {
     width: 1600px;
     height: 600px;
@@ -179,9 +176,7 @@ button {
 .link:hover, .link:focus, .link-cont:hover, .link-cont:focus {
     color: var(--color-accent); 
 }
-.button-main, .button-link{
-/*    background-color: var(--color-grey);
-        color: var(--color-title); */
+.button-main, .button-link {
     border-radius: 4px;
     font-size: 16px;
     text-align: center;
