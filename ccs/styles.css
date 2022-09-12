@@ -28,6 +28,18 @@ button {
     cursor: pointer;
     border-color: transparent;
 }
+.nav-site, .select-nav, .select-contackt {
+    display: flex;
+    ;
+}
+.select-nav .link, .select-contackt .link-cont{
+    padding-top: 32px;
+    padding-bottom: 32px;    
+}
+.select-nav .item:not(:last-child), .select-contackt .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -147,6 +159,7 @@ button {
 }
 
 .logo-main {
+    display: block;
     text-decoration: none;
     color: var(--color-black);
     font-family: 'Raleway', sans-serif;
@@ -154,6 +167,9 @@ button {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 94px;
 }
 .logo-color {
     color: var(--color-accent);
