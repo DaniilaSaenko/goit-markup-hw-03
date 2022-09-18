@@ -134,8 +134,9 @@ button {
 }
 
 .select-projeckt .item {
-    width: 370px;
-    /*   margin-right: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+/*   width: 370px; */    
+/*   margin-right: 30px;
     margin-bottom: 30px; */
 }
 
